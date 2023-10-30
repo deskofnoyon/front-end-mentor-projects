@@ -3,7 +3,7 @@
 
 
 ### List of Projects
-- [Project 1 (QR Code Component)](/qr-code-component)
+- [Project 1 (QR Code Component)](./qr-code-component/index.html)
 
 
 
