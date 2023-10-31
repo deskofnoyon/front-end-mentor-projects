@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: hankenGrotesk;
-    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
 }
 
 * {
