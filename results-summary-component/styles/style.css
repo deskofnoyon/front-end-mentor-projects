@@ -49,18 +49,153 @@ body {
     height: 100vh;
 }
 
-.card{
+.card {
     width: 100%;
     max-width: 610px;
     display: flex;
+    box-shadow: 2px 2px 8px var(--pale-blue);
+    border-radius: 20px;
 }
 
-.card-result{
+.card-result {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
 }
 
-.card-summary{
+.card-result p {
+    color: var(--pale-blue);
+}
+
+.card-result-title {
+    margin-bottom: 25px;
+    color: var(--light-lavender);
+    font-weight: 600;
+}
+
+.card-result-score {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: linear-gradient(var(--violet-blue), var(--light-royal-blue));
+}
+
+.card-result-score small {
+    color: var(--light-lavender);
+    font-weight: 500;
+}
+
+.card-result-score h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+.card-result h3 {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.card-summary {
     flex-basis: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-summary button {
+    padding: 0.9rem .5rem;
+    border-radius: 25px;
+    color: var(--white);
+    background: var(--dark-gray-blue);
+    outline: none;
+    border: none;
+    transition: .1s;
+    font-weight: 600;
+}
+.card-summary button:hover{
+    background: transparent;
+    border: 1px solid var(--dark-gray-blue);
+    color: var(--dark-gray-blue);
+}
+
+.card-summary button:active{
+    transform: scale(0.95);
+}
+
+#card-summary-list-parent {
+    padding: 15px 0;
+}
+
+#card-summary-list-parent li {
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem .5rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.list-icon-category {
+    display: flex;
+
+}
+
+.list-icon-category .icon {
+    margin-right: 8px;
+}
+
+
+.full-mark {
+    color: #46444493;
+
+}
+
+.get-mark {
+    color: var(--dark-gray-blue);
+}
+
+/* Define CSS classes for different background colors */
+.list-item-1 {
+    background-color: #ffcccc;
+    color: var(--light-red);
+}
+
+.list-item-2 {
+    background-color: #f6ffcc;
+    color: var(--orangey-yellow);
+}
+
+.list-item-3 {
+    background-color: #ccffcc;
+    color: var(--green-teal);
+
+}
+
+.list-item-4 {
+    background-color: #ccdcff;
+    color: var(--cobalt-blue);
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .card-result {
+        margin-top: -45px;
+    }
+
+    .card-result-title {
+        padding: 10px 0px;
+    }
 }
