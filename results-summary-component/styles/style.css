@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+
 :root {
     /* Primary colors */
     --light-red: hsl(0, 100%, 67%);
@@ -27,7 +29,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: hankenGrotesk;
+    font-family: hankenGrotesk, 'Hanken Grotesk', sans-serif;
 }
 
 p {
@@ -122,13 +124,14 @@ body {
     transition: .1s;
     font-weight: 600;
 }
-.card-summary button:hover{
+
+.card-summary button:hover {
     background: transparent;
     border: 1px solid var(--dark-gray-blue);
     color: var(--dark-gray-blue);
 }
 
-.card-summary button:active{
+.card-summary button:active {
     transform: scale(0.95);
 }
 
