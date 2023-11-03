@@ -1,4 +1,4 @@
-# Front-end Style Guide
+# Front-end Style Guide for Newsletter sign-up form with success message
 
 ## Layout
 

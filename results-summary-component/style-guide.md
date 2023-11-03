@@ -1,4 +1,4 @@
-# Front-end Style Guide
+# Front-end Style Guide for Results summary component
 
 ## Layout
 
