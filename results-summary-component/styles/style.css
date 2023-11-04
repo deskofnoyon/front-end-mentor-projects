@@ -101,7 +101,7 @@ body {
     color: var(--white);
 }
 
-.card-result h3 {
+.card-result h2 {
     color: var(--white);
     margin-bottom: 15px;
 }
