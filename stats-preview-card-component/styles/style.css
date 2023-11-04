@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
 
 }
 
@@ -131,6 +132,17 @@ h6 {
     background: var(--soft-violet);
 }
 
+.attribution{
+    text-align: center;
+    color: var(--slightly-transparent-white-p);
+    margin-top: 2.5rem;
+    font-size: 12px;
+}
+
+.attribution a{
+    color: var(--soft-violet);
+}
+
 
 /* Responsive CSS */
 @media screen and (max-width: 668px) {
@@ -175,6 +187,10 @@ h6 {
     
     .card-image .mobile-img{
         display: block;
+    }
+
+    .attribution{
+        padding: 0 .5rem;
     }
     
 }
