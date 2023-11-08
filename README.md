@@ -20,3 +20,4 @@
 ### Video Tutorial Links
 - [Results Summary Component](https://youtu.be/oUQbRQ-Ln-Y?si=Q7zh8rlZJRxwMb0w)
 - [Stats Preview Component](https://youtu.be/M11pVUPRsJg?si=qd313ncvXkFYS3FP)
+- [Single Price Grid Component](https://youtu.be/vZ4ZOBxKdGw?si=dN8FkQm12dH_mwpR)
