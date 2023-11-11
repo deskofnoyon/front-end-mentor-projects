@@ -1,0 +1,80 @@
+/* Responsive css */
+@media screen and (max-width: 668px) {
+
+    main {
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+    .success-card {
+        height: 95vh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-between;
+    }
+
+    .success-card .card-icon-success {
+        width: 65px;
+    }
+
+    .success-card p {
+        margin-top: 1.5rem;
+    }
+
+    .success-card-top {
+        margin-top: 3rem;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .card-body {
+        padding: 1.8rem;
+    }
+
+    .card-body p {
+        font-size: 16px;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .card-body ul li {
+        font-size: medium;
+        margin-bottom: 1rem;
+    }
+
+    form label {
+        font-size: 14px;
+        margin-top: 1.5rem;
+    }
+
+    form input {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        padding: 1rem;
+    }
+
+    .card-image {
+        padding: 0;
+        margin-top: -20px;
+        transform: scale(1.038);
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+        width: 100%;
+    }
+}

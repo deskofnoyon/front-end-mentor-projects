@@ -7,13 +7,14 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 
 <body>
-  <main>
+  <main role='main'>
     <div>
-      <div class="card">
+      <div id="card" class="card">
         <!-- Sign-up form start -->
         <div class="card-body">
           <h1>Stay updated!</h1>
@@ -32,10 +33,10 @@
               <span>And much more!</span>
             </li>
           </ul>
-          <form action="">
+          <form action="" id="subscribe-form">
             <label for="email">Email address</label>
-            <input placeholder="email@company.com" type="email" name="email" id="email">
-            <button class="btn">Subscribe to monthly newsletter</button>
+            <input placeholder="email@company.com" type="email" id="email">
+            <button id="subscribe-btn" class="btn">Subscribe to monthly newsletter</button>
           </form>
         </div>
         <div class="card-image">
@@ -44,24 +45,28 @@
         </div>
         <!-- Sign-up form end -->
       </div>
-
-      <div class="card-success">
+      <div class="success-card" id="success-card">
         <!-- Success message start -->
-        <h1>Thanks for subscribing!</h1>
-        <p>
-          A confirmation email has been sent to ash@loremcompany.com.
-          Please open it and click the button inside to confirm your subscription.
-        </p>
+        <div class="success-card-top">
+          <img src="./assets/images/icon-success.svg" alt="card-success-icon" class="card-icon-success">
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to <strong>ash@loremcompany.com</strong>.
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+        </div>
         <button class="btn">Dismiss message</button>
         <!-- Success message end -->
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/profile/deskofnoyon" target="_blank">Frontend Mentor</a>
+        Coded by <a target="_blank" href="http://youtube.com/@deskofnoyon">Desk of Noyon</a>
       </div>
     </div>
   </main>
 
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Desk of Noyon</a>.
-  </div> -->
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
