@@ -1,4 +1,6 @@
-# Front-end Style Guide
+# Front-end Style Guide for News homepage
+
+![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
 ## Layout
 
