@@ -1,4 +1,73 @@
 /* Responsive css */
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 768px) {
+
+    main {
+        padding: 0 1rem;
+    }
+
+    .mobile-menu {
+        display: block;
+        z-index: 6;
+    }
+
+    .nav .nav-list {
+        flex-direction: column;
+        padding-top: 60px;
+        position: fixed;
+        background: var(--off-white);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        z-index: 5;
+    }
+
+    .nav .nav-list li a {
+        width: 100%;
+    }
+
+    .nav .nav-list li a:hover {
+        background: var(--very-dark-blue);
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-left {
+        flex-basis: 100%;
+    }
+
+    .hero-image .desktop-img {
+        display: none;
+    }
+
+    .hero-image .mobile-img {
+        display: block;
+    }
+
+    .hero-texts {
+        flex-direction: column;
+    }
+
+    .hero-text p {
+        margin: 1.5rem 0;
+        padding-right: 0;
+    }
+
+    .hero-right {
+        flex-basis: 100%;
+        margin: 3rem 0;
+    }
+
+    .blogs {
+        padding: 0;
+        flex-direction: column;
+        gap: 2rem 0;
+        padding-bottom: 2rem;
+    }
+
+    .blog-content {
+        padding: 0 1rem;
+    }
     
 }
