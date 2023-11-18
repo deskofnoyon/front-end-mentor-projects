@@ -7,7 +7,7 @@
 - [Project 3 (Stats Preview Component)](./stats-preview-card-component/index.html)
 - [Project 4 (Single Price Grid Component)](./single-price-grid-component/index.html)
 - [Project 5 (Newsletter sing up with success message)](./newsletter-sign-up-with-success-message/index.html)
-- [Project 6 (Newsletter sing up with success message)](./news-homepage/index.html)
+- [Project 6 (News Homepage)](./news-homepage/index.html)
 
 
 ### Style Guid
@@ -16,7 +16,7 @@
 - [Project 3 (Stats Preview Component)](./stats-preview-card-component/style-guide.md)
 - [Project 4 (Single Price Grid Component)](./single-price-grid-component/style-guide.md)
 - [Project 5 (Newsletter sing up with success message)](./newsletter-sign-up-with-success-message/style-guide.md)
-- [Project 6 (Newsletter sing up with success message)](./news-homepage/style-guide.md)
+- [Project 6 (News Homepage)](./news-homepage/style-guide.md)
 
 
 ### Video Tutorial Links
