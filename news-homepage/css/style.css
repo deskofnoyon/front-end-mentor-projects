@@ -20,13 +20,20 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    
 }
+
+@font-face {
+    font-family: inter;
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: inter, 'Inter', sans-serif;
 }
 
-p {
+p { 
     font-size: 15px;
 }
 
@@ -45,7 +52,7 @@ main {
     outline: none;
     color: var(--off-white);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     transition: .3s ease;
 }
@@ -54,25 +61,47 @@ main {
     background: var(--very-dark-blue);
 }
 
+header {
+    position: sticky;
+    top: 0;
+    background: var(--off-white);
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+    
 }
 
-.nav ul {
+/* mobile menu button */
+.mobile-menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: .5rem;
+    border-radius: 3px;
+}
+
+.mobile-menu img {
+    width: 100%;
+}
+
+.nav .nav-list {
     display: inline-flex;
 }
 
-.nav ul li a {
+.nav .nav-list li a {
     padding: 1rem 1rem;
     display: inline-block;
     color: var(--dark-grayish-blue);
     transition: .2s ease;
 }
 
-.nav ul li a:hover {
+.nav .nav-list li a:hover {
     color: var(--soft-red);
 }
 
@@ -80,17 +109,26 @@ main {
 /* hero section */
 .hero-section {
     display: flex;
-    gap: 0 2rem;
+    justify-content: space-between;
 }
 
 .hero-left {
-    flex-basis: 65%;
+    flex-basis: 70%;
 }
+
+
+.hero-image .desktop-img {
+    display: block;
+}
+
+.hero-image .mobile-img {
+    display: none;
+}
+
 
 .hero-image img {
     max-width: 100%;
 }
-
 
 .hero-texts {
     display: flex;
@@ -115,7 +153,7 @@ main {
 }
 
 .hero-right {
-    flex-basis: 30%;
+    flex-basis: 28%;
     background: var(--very-dark-blue);
     padding: 2rem;
     display: flex;
@@ -160,7 +198,7 @@ main {
 
 .blog {
     display: flex;
-    height: 150px;
+    flex-basis: 33%;
 }
 
 .blog-image {
@@ -170,13 +208,12 @@ main {
 
 .blog-image img {
     width: 100%;
-    object-fit: cover;
-    height: 150px;
+    height: 100%;
 }
 
 
 .blog-content {
-    flex-basis: 68%;
+    flex-basis: 75%;
     padding: 0 1.5rem;
 }
 
@@ -194,4 +231,19 @@ main {
 .blog-content p {
     line-height: 25px;
     color: var(--dark-grayish-blue);
+}
+
+/* attribution */
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    padding: 2rem .5rem;
+}
+
+.attribution a {
+    color: var(--soft-red);
+}
+
+.attribution a:hover{
+    text-decoration: underline;
 }
