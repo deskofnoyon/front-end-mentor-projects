@@ -24,6 +24,7 @@
 - [Stats Preview Component](https://youtu.be/M11pVUPRsJg?si=qd313ncvXkFYS3FP)
 - [Single Price Grid Component](https://youtu.be/vZ4ZOBxKdGw?si=dN8FkQm12dH_mwpR)
 - [Newsletter Sign Up Component](https://youtu.be/EdW43BRfUSA?si=g52SGVdLFlpSrRIr)
+- [News Homepage](https://youtu.be/uj4X2HQ7-10?si=fPNXLc36kt3pKtXS)
 
 
 
