@@ -27,8 +27,8 @@ body {
     width: 100%;
     margin: 0 auto;
     max-width: 1440px;
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
 }
 
 .btn {
@@ -39,10 +39,19 @@ body {
     border-radius: 3px;
     transition: ease-in-out .2s;
     font-weight: 500;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .btn:active {
     transform: scale(0.96);
+}
+
+.btn:hover {
+    border: 1px solid var(--soft-blue);
+    background: transparent;
+    color: var(--soft-blue);
 }
 
 /* header */
@@ -65,7 +74,56 @@ body {
 
 .nav-links li:last-child .btn{
     background: var(--soft-red);
+
 }
+
+.nav-links li:last-child .btn:hover {
+    color: var(--soft-red);
+    background: transparent;
+    border: 1px solid var(--soft-red);
+}
+
+
+/* hero section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 7rem 0;
+    justify-content: space-between;
+}
+
+.hero-child {
+    flex-basis: 45%;
+}
+
+.hero-child h1 {
+    font-size: 2.5rem;
+    max-width: 85%;
+}
+
+.hero-child p {
+    max-width: 80%;
+    margin: 1rem 0;
+    line-height: 25px;
+}
+
+
+.hero-child img {
+    width: 100%;
+}
+
+.hero-btn-parent {
+    display: flex;
+}
+
+.hero-btn-parent .btn-firefox {
+    color: var(--very-dark-blue);
+    background: #fff;
+    box-shadow: 1px 1px 2px rgb(180, 179, 179);
+    margin-left: 1.5rem;
+}
+
+
 
 /* footer */
 footer {
