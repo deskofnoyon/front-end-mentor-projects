@@ -1,7 +1,7 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
 
-:root{
+:root {
     /* primary colors */
     --soft-blue: hsl(231, 69%, 60%);
     --soft-red: hsl(0, 94%, 66%);
@@ -15,7 +15,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -23,12 +22,24 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+p {
+    color: var(--grayish-blue);
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
     max-width: 1440px;
-    padding-left: 3.5rem !important;
-    padding-right: 3.5rem !important;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+    padding-bottom: 7rem;
+    padding-top: 6rem;
 }
 
 .btn {
@@ -43,6 +54,18 @@ body {
     border: 1px solid transparent;
     cursor: pointer;
 }
+
+.section-title {
+    max-width: 36%;
+    margin: 4.5rem auto;
+    text-align: center;
+}
+
+.section-title h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
 
 .btn:active {
     transform: scale(0.96);
@@ -67,12 +90,16 @@ body {
     display: inline-flex;
 }
 
-.nav-links li a{
+.nav-links li a {
     display: inline-block;
     padding: .5rem 1rem;
 }
 
-.nav-links li:last-child .btn{
+.nav-links li a:hover {
+    color: var(--soft-red);
+}
+
+.nav-links li:last-child .btn {
     background: var(--soft-red);
 
 }
@@ -88,7 +115,6 @@ body {
 .hero-section {
     display: flex;
     align-items: center;
-    padding: 7rem 0;
     justify-content: space-between;
 }
 
@@ -104,12 +130,28 @@ body {
 .hero-child p {
     max-width: 80%;
     margin: 1rem 0;
-    line-height: 25px;
 }
 
 
-.hero-child img {
+.hero-image img {
     width: 100%;
+}
+
+.hero-image {
+    z-index: 1;
+    position: relative;
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 92%;
+    height: 82%;
+    background: var(--soft-blue);
+    z-index: -1;
+    border-bottom-left-radius: 40%;
 }
 
 .hero-btn-parent {
@@ -123,7 +165,70 @@ body {
     margin-left: 1.5rem;
 }
 
+.hero-btn-parent .btn-firefox:hover {
+    border: 1px solid gray
+}
 
+/* feature section */
+
+.feature-section {
+    margin-bottom: 2rem;
+}
+
+.feature-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    width: 48%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.feature-tabs a {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    transition: ease .2s;
+}
+
+.feature-tabs a:hover {
+    color: var(--soft-red);
+}
+
+
+.feature-content-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-child {
+    flex-basis: 45%;
+}
+
+.feature-child h2 {
+    font-size: 2rem;
+}
+
+.feature-child p {
+    margin: 1rem 0;
+    max-width: 65%;
+}
+
+.feature-child-image {
+    z-index: 1;
+    position: relative;
+}
+
+.feature-child-image::after {
+    content: "";
+    position: absolute;
+    left: -30%;
+    top: 45%;
+    width: 92%;
+    height: 88%;
+    background: var(--soft-blue);
+    z-index: -1;
+    border-bottom-right-radius: 45%;
+}
 
 /* footer */
 footer {
@@ -156,4 +261,9 @@ footer {
     font-size: 1.5rem;
     color: #fff;
     padding: 0 1rem;
+}
+
+.footer-links a:hover,
+.footer-social-links a:hover {
+    color: var(--soft-red)
 }
