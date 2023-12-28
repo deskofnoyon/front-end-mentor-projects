@@ -183,7 +183,7 @@ a {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgb(233, 233, 233);
-    width: 48%;
+    width: 50%;
     margin: 0 auto;
     margin-bottom: 4rem;
 }
@@ -257,7 +257,16 @@ a {
 .browser-card {
     box-shadow: -2px 5px 8px #eef0f1fa;
     border-radius: .5rem;
-    margin-right: 2.2rem;
+    margin-right: 2.4rem;
+    transition: .3s;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.browser-card:hover {
+    scale: 0.98;
+    box-shadow: -2px 5px 15px #e1e2e2fa;
+    border: 1px solid var(--soft-blue);
 }
 
 .browser-card:last-child {
@@ -297,6 +306,43 @@ a {
 
 .card-parent .browser-card:nth-child(3) {
     margin-top: 10rem;
+}
+
+
+/* frequently asked question section */
+.accordion-parent {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border 0.3s ease-in-out;
+}
+
+.accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-header i {
+    margin-right: 10px;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+.faq-btn-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
 
