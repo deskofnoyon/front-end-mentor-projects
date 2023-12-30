@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const accordionItems = document.querySelectorAll(".accordion-item");
 
-	accordionItems.forEach((item) => {
+	accordionItems.forEach((item, index) => {
 		const header = item.querySelector(".accordion-header");
 		const chevronIcon = header.querySelector("i");
 
@@ -31,5 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
 				chevronIcon.classList.add("bx-chevron-up");
 			}
 		});
+
+		// Simulate a click on the first item to open it by default
+		if (index === 0) {
+			header.click();
+		}
 	});
 });

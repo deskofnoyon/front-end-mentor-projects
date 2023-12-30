@@ -118,7 +118,9 @@ a {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100vh;
 }
 
 .hero-child {
@@ -323,6 +325,10 @@ a {
     transition: border 0.3s ease-in-out;
 }
 
+.accordion-item:hover {
+    border: 1px solid var(--soft-blue);
+}
+
 .accordion-header {
     padding: 10px;
     cursor: pointer;
@@ -374,6 +380,11 @@ a {
     justify-content: center;
 }
 
+.contact-section form .form-content {
+    display: flex;
+    flex-direction: column;
+} 
+
 .contact-section input[type=email] {
     padding: .8rem 1rem;
     margin-right: 1rem;
@@ -381,6 +392,7 @@ a {
     outline: none;
     border: none;
 }
+
 
 .contact-section .btn {
     background: var(--soft-red);
