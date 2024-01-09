@@ -1,3 +1,31 @@
+// features section
+document.addEventListener("DOMContentLoaded", function () {
+	const featureTabs = document.querySelectorAll(".feature-tabs a");
+	const featureContents = document.querySelectorAll(".feature-content-parent");
+
+	// Hide all feature contents except the first one
+	featureContents.forEach((content, index) => {
+		if (index !== 0) {
+			content.style.display = "none";
+		}
+	});
+
+	featureTabs.forEach((tab, index) => {
+		tab.addEventListener("click", function (event) {
+			event.preventDefault();
+
+			// Hide all feature contents
+			featureContents.forEach((content) => {
+				content.style.display = "none";
+			});
+
+			// Display the clicked feature content
+			featureContents[index].style.display = "flex"; // Adjust display property as needed
+		});
+	});
+});
+
+// feaquent ask question section
 document.addEventListener("DOMContentLoaded", function () {
 	const accordionItems = document.querySelectorAll(".accordion-item");
 
@@ -37,4 +65,60 @@ document.addEventListener("DOMContentLoaded", function () {
 			header.click();
 		}
 	});
+});
+
+// contact section email validation
+document.addEventListener("DOMContentLoaded", function () {
+	const emailForm = document.getElementById("emailForm");
+	const emailInput = document.getElementById("email");
+	const emailError = document.getElementById("emailError");
+	const emailSuccess = document.getElementById("emailSuccess");
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	emailError.style.display = "none";
+	emailSuccess.style.display = "none";
+
+	emailForm.addEventListener("submit", (event) => {
+		event.preventDefault();
+		const emailValue = emailInput.value.trim();
+
+		if (!emailValue) {
+			displayError("Please provide an email address");
+		} else if (!emailRegex.test(emailValue)) {
+			displayError("Please provide a valid email address");
+		} else {
+			clearError();
+			displaySuccess("Form submitted successfully!");
+			console.log("Form submitted with a valid email address:", {
+				email: emailValue,
+			});
+			emailInput.value = "";
+		}
+	});
+
+	function displayError(message) {
+		emailError.style.display = "block";
+		emailInput.style.border = "1px solid #fa5757";
+		emailError.innerText = message;
+	}
+
+	function displaySuccess(message) {
+		emailSuccess.style.display = "block";
+		emailSuccess.innerText = message;
+
+		// Hide success message after 3 seconds (adjust the time as needed)
+		setTimeout(() => {
+			clearSuccess();
+		}, 2000);
+	}
+
+	function clearSuccess() {
+		emailSuccess.style.display = "none";
+		emailSuccess.innerText = "";
+	}
+
+	function clearError() {
+		emailError.style.display = "none";
+		emailInput.style.border = ""; // Reset border to default
+		emailError.innerText = "";
+	}
 });

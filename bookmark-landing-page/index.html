@@ -19,9 +19,9 @@
         <img src="./images/logo-bookmark.svg" alt="logo-bookmark">
       </a>
       <ul class="nav-links">
-        <li><a href="#">Features</a></li>
+        <li><a href="#features">Features</a></li>
         <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a class="btn" href="#">Login</a></li>
       </ul>
     </nav>
@@ -48,9 +48,7 @@
 
 
     <!-- feature section -->
-
-
-    <section class="feature-section container">
+    <section class="feature-section container" id="features">
       <div class="section-title">
         <h1>Features</h1>
         <p>
@@ -66,7 +64,7 @@
       </div>
 
       <div class="feature-content-parent">
-        <div class="feature-child feature-child-image">
+        <div class="feature-child">
           <img src="./images/illustration-features-tab-1.svg" alt="feature-image">
         </div>
         <div class="feature-child">
@@ -78,29 +76,41 @@
           <a href="#" class="btn">More Info</a>
         </div>
       </div>
+
+      <div class="feature-content-parent">
+        <div class="feature-child">
+          <img src="./images/illustration-features-tab-2.svg" alt="feature-image">
+        </div>
+        <div class="feature-child">
+          <h2>Intelligent search</h2>
+          <p>
+            Our powerful search feature will help you find saved sites in no time at all.
+            No need to trawl through all of your bookmarks.
+          </p>
+          <a href="#" class="btn">More Info</a>
+        </div>
+      </div>
+
+      <div class="feature-content-parent">
+        <div class="feature-child">
+          <img src="./images/illustration-features-tab-3.svg" alt="feature-image">
+        </div>
+        <div class="feature-child">
+          <h2>Share your bookmarks</h2>
+          <p>
+            Easily share your bookmarks and collections with others. Create a shareable
+            link that you can send at the click of a button.
+          </p>
+          <a href="#" class="btn">More Info</a>
+        </div>
+      </div>
     </section>
 
-    <!-- <div class="feature-child">
-      <h2>Intelligent search</h2>
-      <p>
-        Our powerful search feature will help you find saved sites in no time at all.
-        No need to trawl through all of your bookmarks.
-      </p>
-      <a href="#" class="btn">More Info</a>
-    </div>
 
 
-    <div class="feature-child">
-      <h2>Share your bookmarks</h2>
-      <p>
-        Easily share your bookmarks and collections with others. Create a shareable
-        link that you can send at the click of a button.
-      </p>
-      <a href="#" class="btn">More Info</a>
-    </div> -->
 
+    <!-- download extension section -->
     <section class="container download-section">
-
       <div class="section-title">
         <h1>Download the extension</h1>
         <p>
@@ -221,18 +231,23 @@
     </section>
 
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="container">
         <span>35,000+ already joined</span>
         <h1>Stay up-to-date with what we’re doing</h1>
-        <form action="/" method="post">
-          <input placeholder="Enter your email address" type="email" name="email" id="email">
-          <a href="#" class="btn">Contact Us</a>
-        </form>
+        <div class="from-parent">
+          <form id="emailForm">
+            <input placeholder="Enter your email address" type="email" name="email" id="email">
+            <button type='submit' class="btn">Contact Us</button>
+          </form>
+          <small id="emailError" class="error-message">Please provide valid email</small>
+          <small id="emailSuccess" class="success-message">Thank you submit</small>
+        </div>
       </div>
     </section>
-
   </main>
+
+
   <footer>
     <div class="inner-footer container">
       <div class="footer-left">
@@ -254,14 +269,15 @@
         </a>
       </div>
     </div>
-    <!-- <div>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a target="_blank" href="#">Desk of Noyon</a>.
-      </p>
-    </div> -->
   </footer>
   <script src="./js/script.js"></script>
 </body>
 
 </html>
+
+<!-- <div>
+          <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a target="_blank" href="#">Desk of Noyon</a>.
+          </p>
+        </div> -->
