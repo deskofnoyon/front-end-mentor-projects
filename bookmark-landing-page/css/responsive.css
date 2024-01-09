@@ -1,0 +1,251 @@
+/* Responsive css */
+@media screen and (max-width: 768px) {
+
+   .container {
+      padding-left: 0rem;
+      padding-right: 0rem;
+   }
+
+   .section-title {
+      max-width: 100%;
+      margin: 4.5rem 2rem;
+      text-align: center;
+   }
+
+   .section-title h1 {
+      font-size: 1.5rem;
+   }
+
+   .navbar {
+      position: relative;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 100%;
+   }
+
+   .mobile-menu {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background: #2f354ffb;
+      z-index: 5;
+      padding: 1rem;
+      height: 100dvh;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   .mobile-menu-inner {
+      display: flex;
+      justify-content: space-between;
+
+   }
+
+   .menu-button {
+      font-size: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      outline: none;
+      border: none;
+   }
+
+   .menu-close {
+      color: white;
+   }
+
+   .nav-links {
+      flex-direction: column;
+      width: 100%;
+      padding: 0 1rem;
+   }
+
+   .nav-links li a {
+      display: block;
+      padding: 1rem .5rem;
+      color: white;
+      text-align: center;
+      border-bottom: 1px solid #97979773;
+      margin-top: .5rem;
+      text-transform: uppercase;
+   }
+
+   .nav-links li .btn {
+      margin-top: 1rem;
+   }
+
+   .mobile-menu-social {
+      display: flex;
+      justify-content: space-between;
+      width: 22%;
+      margin: 0 auto
+   }
+
+   .mobile-menu-social a {
+      color: white;
+      font-size: 1.8rem;
+   }
+
+   /* hero section */
+   .hero-section {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+   }
+
+   .hero-child {
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   .hero-child h1 {
+      max-width: 100%;
+      font-size: 2rem;
+   }
+
+   .hero-image::after {
+      left: 20%;
+      top: 30%;
+      width: 92%;
+      height: 80%;
+      z-index: -1;
+      border-bottom-left-radius: 50%;
+   }
+
+   .hero-image {
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+   }
+
+   /* features section */
+
+   .feature-tabs {
+      flex-direction: column;
+      width: 100%;
+      border-bottom: none;
+   }
+
+   .feature-tabs a {
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0 2rem;
+   }
+
+   .feature-content-parent {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1.5rem;
+   }
+
+   .feature-child {
+      text-align: center;
+   }
+
+   .feature-child-image {
+      margin-bottom: 2rem;
+   }
+
+   /* bowerser extension */
+   .card-parent {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0rem 1.5rem;
+   }
+
+   .browser-card {
+      margin-right: 0rem;
+      flex-basis: 100%;
+      flex-grow: 1;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1.5rem;
+   }
+
+   .browser-card:last-child {
+      margin-bottom: 0;
+   }
+
+   .card-parent .browser-card:nth-child(2) {
+      margin-top: 0rem;
+   }
+
+   .card-parent .browser-card:nth-child(3) {
+      margin-top: 0rem;
+   }
+
+
+   .download-section .section-title {
+      margin: 2.5rem 2rem;
+   }
+
+
+   /* accordion seciton */
+   .accordion-parent {
+      max-width: 100%;
+      padding: 0rem 1rem;
+   }
+
+
+   /* contact seciton */
+   .contact-section {
+      padding: 0 1rem;
+   }
+
+   .contact-section h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      max-width: 85%;
+      line-height: 35px;
+   }
+
+
+   .from-parent {
+      width: 100%;
+   }
+
+   .contact-section input[type=email] {
+      flex-basis: 66%;
+   }
+
+   .contact-section form {
+      justify-content: space-between;
+   }
+
+   .contact-section form .btn {
+      flex-basis: 32%;
+   }
+
+   .error-message {
+      width: 66%;
+      bottom: -50px;
+   }
+
+   .success-message {
+      width: 66%;
+   }
+
+   /* footer */
+   .inner-footer {
+      padding: 1rem 1rem;
+   }
+
+   .footer-links {
+      display: none;
+   }
+
+}

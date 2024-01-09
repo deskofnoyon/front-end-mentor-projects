@@ -18,12 +18,33 @@
       <a class="logo" href="#">
         <img src="./images/logo-bookmark.svg" alt="logo-bookmark">
       </a>
-      <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a class="btn" href="#">Login</a></li>
-      </ul>
+      <button class="menu-button" id="menu-open">
+        <i class='bx bx-menu'></i>
+      </button>
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-inner">
+          <a class="logo" href="#">
+            <img src="./images/logo-bookmark-white.svg" alt="logo-bookmark">
+          </a>
+          <button class="menu-button menu-close" id="menu-close">
+            <i class='bx bx-x'></i>
+          </button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn" href="#">Login</a></li>
+        </ul>
+        <div class="mobile-menu-social">
+          <a href="#">
+            <i class='bx bxl-facebook-square'></i>
+          </a>
+          <a href="#">
+            <i class='bx bxl-twitter'></i>
+          </a>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -64,7 +85,7 @@
       </div>
 
       <div class="feature-content-parent">
-        <div class="feature-child">
+        <div class="feature-child feature-child-image">
           <img src="./images/illustration-features-tab-1.svg" alt="feature-image">
         </div>
         <div class="feature-child">
@@ -78,7 +99,7 @@
       </div>
 
       <div class="feature-content-parent">
-        <div class="feature-child">
+        <div class="feature-child feature-child-image">
           <img src="./images/illustration-features-tab-2.svg" alt="feature-image">
         </div>
         <div class="feature-child">
@@ -92,7 +113,7 @@
       </div>
 
       <div class="feature-content-parent">
-        <div class="feature-child">
+        <div class="feature-child feature-child-image">
           <img src="./images/illustration-features-tab-3.svg" alt="feature-image">
         </div>
         <div class="feature-child">
@@ -252,7 +273,7 @@
     <div class="inner-footer container">
       <div class="footer-left">
         <a class="footer-logo" href="#">
-          <img src="./images/logo-bookmark-footer.svg" alt="logo-bookmark">
+          <img src="./images/logo-bookmark-white.svg" alt="logo-bookmark">
         </a>
         <ul class="footer-links">
           <li><a href="#">Features</a></li>
