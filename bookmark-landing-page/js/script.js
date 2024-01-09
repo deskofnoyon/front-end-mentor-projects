@@ -1,9 +1,23 @@
+// mobile menu
+const menuOpenButton = document.getElementById("menu-open");
+const menuCloseButton = document.getElementById("menu-close");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuOpenButton.addEventListener("click", () => {
+	mobileMenu.style.display = "flex";
+});
+
+menuCloseButton.addEventListener("click", () => {
+	mobileMenu.style.display = "none";
+});
+
 // features section
 document.addEventListener("DOMContentLoaded", function () {
 	const featureTabs = document.querySelectorAll(".feature-tabs a");
 	const featureContents = document.querySelectorAll(".feature-content-parent");
 
-	// Hide all feature contents except the first one
+	featureTabs[0].classList.add("active");
+
 	featureContents.forEach((content, index) => {
 		if (index !== 0) {
 			content.style.display = "none";
@@ -14,13 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
 		tab.addEventListener("click", function (event) {
 			event.preventDefault();
 
-			// Hide all feature contents
+			featureTabs.forEach((t) => {
+				t.classList.remove("active");
+				t.style.borderBottom = "none";
+			});
+
+			tab.classList.add("active");
+			tab.style.borderBottom = "2px solid #fa5757";
+
 			featureContents.forEach((content) => {
 				content.style.display = "none";
 			});
 
-			// Display the clicked feature content
-			featureContents[index].style.display = "flex"; // Adjust display property as needed
+			featureContents[index].style.display = "flex";
 		});
 	});
 });
