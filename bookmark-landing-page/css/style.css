@@ -197,7 +197,6 @@ header {
 }
 
 /* feature section */
-
 .feature-section {
     margin-bottom: 2rem;
     overflow: hidden;
@@ -251,8 +250,6 @@ header {
 }
 
 /* downlaod section */
-.download-section {}
-
 .download-section .section-title {
     margin: 2.5rem auto;
 }
@@ -376,14 +373,12 @@ header {
     font-size: 13px;
 }
 
-
 .contact-section h1 {
     font-size: 2.5rem;
     text-align: center;
     max-width: 48%;
     margin: 2rem auto;
 }
-
 
 .contact-section form {
     display: flex;
