@@ -11,6 +11,7 @@
 | [Project 5 (Newsletter sign up with success message)](./newsletter-sign-up-with-success-message/index.html) | Live preview for Project 5 |
 | [Project 6 (News Homepage)](./news-homepage/index.html)                                                     | Live preview for Project 6 |
 | [Project 7 (Bookmark landing page)](./bookmark-landing-page/index.html)                                     | Live preview for Project 7 |
+| [Project 8 (Blogr landing page)](./blogr-landing-page/index.html)                                           | Live preview for Project 8 |
 
 ### Style Guid
 
@@ -23,6 +24,7 @@
 | [Project 5 (Newsletter sign up with success message)](./newsletter-sign-up-with-success-message/style-guide.md) | Style guid for Project 5 |
 | [Project 6 (News Homepage)](./news-homepage/style-guide.md)                                                     | Style guid for Project 6 |
 | [Project 7 (Bookmark landing page)](./bookmark-landing-page/style-guide.md)                                     | Style guid for Project 7 |
+| [Project 8 (Blogr landing page)](./blogr-landing-page/style-guide.md)                                           | Style guid for Project 8 |
 
 ### Video Tutorial Links
 

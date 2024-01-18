@@ -1,0 +1,46 @@
+/* ------ google fonts ------ */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+html{
+   scroll-behavior: smooth;
+}
+
+:root {
+   --light-red-text: #ff525d;
+   --very-light-red-text: #ff7a85;
+   --very-dark-blue: #1f3f5b;
+
+   --white: #ffffff;
+   --grayish-blue: #c8c8cb;
+   --very-dark-grayish-blue: #4b5862;
+   --very-dark-black-blue: #25252d;
+
+   --very-light-red: #ff8f70;
+   --light-red: #ff3d54;
+
+   --very-dark-gary-vlue: #2c2d3f;
+   --very-dark-desaturated-blue: #3f4164;
+   
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Overpass', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Ubuntu', sans-serif;
+}
