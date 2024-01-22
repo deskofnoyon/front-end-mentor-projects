@@ -2,6 +2,13 @@
 
 <img width="100%" src="https://i.ibb.co/CmwRZH8/front-end-mentor-banner.png" alt="banner-image">
 
+<div align="center">
+   <img src="https://img.shields.io/github/repo-size/deskofnoyon/front-end-mentor-projects" alt="GitHub-repo-size" />
+   <img src="https://img.shields.io/github/directory-file-count/deskofnoyon/front-end-mentor-projects" alt="GitHub-repo-file-count" />
+   <img src="https://img.shields.io/github/forks/deskofnoyon/front-end-mentor-projects" alt="GitHub-forks" />
+   <img src="https://img.shields.io/github/followers/deskofnoyon" alt="GitHub-followers" />
+</div> 
+
 | Project                                                                                                     | Description                |
 | ----------------------------------------------------------------------------------------------------------- | -------------------------- |
 | [Project 1 (QR Code Component)](./qr-code-component/index.html)                                             | Live preview for Project 1 |
@@ -42,7 +49,25 @@
 
 ## Connect with us
 
-[![Facebook Badge](https://img.shields.io/badge/-deskofnoyon-1877F2?style=flat-square&labelColor=1877F2&logo=facebook&logoColor=white)](https://facebook.com/deskofnoyon)
-[![Instagram Badge](https://img.shields.io/badge/-deskofnoyon-E4405F?style=flat-square&labelColor=E4405F&logo=instagram&logoColor=white)](https://instagram.com/deskofnoyon)
-[![Linkedin Badge](https://img.shields.io/badge/-deskofnoyon-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/company/deskofnoyon/)
-[![Email Badge](https://img.shields.io/badge/-Email-c14438?style=flat-square&logo=Gmail&logoColor=white)](mailto:deskofnoyon+github@gmail.com)
+<div align="center" style='display:flex; justify-content: center; gap: 0 1px'>
+  <a target="_blank" href="https://facebook.com/deskofnoyon">
+    <img src="https://img.shields.io/badge/-deskofnoyon-1877F2?style=flat-square&labelColor=1877F2&logo=facebook&logoColor=white" alt="Facebook Badge">
+  </a>
+
+  <a target="_blank" href="https://instagram.com/deskofnoyon">
+    <img src="https://img.shields.io/badge/-deskofnoyon-E4405F?style=flat-square&labelColor=E4405F&logo=instagram&logoColor=white" alt="Instagram Badge">
+  </a>
+
+  <a target="_blank" href="https://www.linkedin.com/company/deskofnoyon/">
+    <img src="https://img.shields.io/badge/-deskofnoyon-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn Badge">
+  </a>
+
+  <a target="_blank" href="mailto:deskofnoyon+github@gmail.com">
+    <img src="https://img.shields.io/badge/-Email-c14438?style=flat-square&logo=Gmail&logoColor=white" alt="Email Badge">
+  </a>
+
+  <a target="_blank" href="https://youtube.com/@deskofnoyon">
+    <img src="https://img.shields.io/badge/-deskofnoyon-CD201F?style=flat-square&logo=YouTube&logoColor=white" alt="YouTube Badge">
+  </a>
+</div>
+
